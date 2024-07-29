@@ -3,7 +3,8 @@
 **Step-by-step guide on Medium**: [Customizing Knowledge Graph Generation and Querying for Improved Response](https://medium.com/ai-advances/customizing-knowledge-graph-generation-and-querying-for-improved-response-ef2e269f4395?sk=18773c1bcfdf742073091dfb8d98193a)
 ___
 ## Context
-Knowledge graphs are expected to improve adaptation of LLMs to niche domains, as they capture semantics or relationships underlying these entities unlike RAG, which also suffers from hallucinations.
+Knowledge graphs are expected to improve adaptation of LLMs to niche domains, as they capture semantics or relationships underlying entities captured from internal documents unlike Retrieval-Augmented Generation. The latter additionally suffers from hallucinations, which is expected to be better handled by knowledge-graph powered LLMs.
+
 In this project, we develop a QA application using `LlamaIndex`'s module `PropertyGraphIndex` powered by a locally hosted LLM loaded using `llama-cpp-python`. This app is tested using 5 different pre-downloaded models from HuggingFace.
 <br><br>
 ![Knowledge Graph](/assets/kgraph.png)
@@ -33,7 +34,7 @@ $ python main.py
 ```
 - Here is a sample run:
 ```
-% python main.py
+$ python main.py
 Query: When should simplified routing be used on SteelHeads?
 
 Response:  Simplified routing should be enabled in scenarios with multiple LAN subnets or multiple VLANs on the LAN segment that need to be optimized through the Steelhead.
