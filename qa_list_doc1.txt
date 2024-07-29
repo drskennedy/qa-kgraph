@@ -1,0 +1,3 @@
+When should simplified routing be used on SteelHeads?
+Under what situations simplified routing should not be enabled on SteelHeads?
+If you have an asymmetric setup through the SteelHead, does it have any impact on the simplified routing feature?
